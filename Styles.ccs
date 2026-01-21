@@ -1,0 +1,107 @@
+:root {
+  --bg: #0b0b0f;
+  --text: #f4f4f6;
+  --gold: #d6a34f;
+  --accent: #f0b33f;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: var(--text);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a24, #07070a);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 10px 0 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: 2px solid var(--gold);
+  color: var(--text);
+  background: transparent;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.section {
+  padding: 60px 40px;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card, .service {
+  background: #111118;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.form {
+  display: grid;
+  gap: 15px;
+  max-width: 500px;
+}
+
+input, textarea {
+  padding: 15px;
+  background: #0f0f14;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--text);
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #050507;
+}
+
